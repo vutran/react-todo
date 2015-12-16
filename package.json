@@ -1,0 +1,31 @@
+{
+  "name": "react-todo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vutran/react-todo.git"
+  },
+  "keywords": [
+    "react",
+    "todo"
+  ],
+  "author": "Vu Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vutran/react-todo/issues"
+  },
+  "homepage": "https://github.com/vutran/react-todo#readme",
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-redux": "^4.0.1",
+    "redux": "^3.0.5",
+    "redux-devtools": "^3.0.0",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.1"
+  }
+}
