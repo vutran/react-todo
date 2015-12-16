@@ -1,8 +1,12 @@
 {
   "name": "react-todo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
+  "files": [
+    "src",
+    "lib"
+  ]
   "scripts": {
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",
