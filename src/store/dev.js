@@ -9,8 +9,11 @@ const finalCreateStore = compose(
 )(createStore)
 
 function getDebugSessionKey() {
-  const matches = window.location.href.match(/[?&]debug_session=([^&]+)\b/)
-  return (matches && matches.length > 0)? matches[1] : null
+  if (typeof window !== 'undefined') {
+    const matches = window.location.href.match(/[?&]debug_session=([^&]+)\b/)
+    return (matches && matches.length > 0)? matches[1] : null
+  }
+  return null;
 }
 
 export default function configureStore(initialState) {

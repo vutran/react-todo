@@ -2,7 +2,7 @@
 import { ADD_TODO } from '../actions/index'
 
 // The initial state
-const intialState = [
+const initialState = [
   { name: 'Learn ReactJS' },
   { name: 'Research Flux and Redux' }
 ]
@@ -14,7 +14,7 @@ const intialState = [
  * @param object action         The action that is to be performed
  * @return array
  */
-export default function data(state = intialState, action) {
+export default function data(state = initialState, action) {
   switch (action.type) {
     case ADD_TODO:
       return [
