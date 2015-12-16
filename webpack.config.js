@@ -5,7 +5,7 @@ const path = require('path')
 let config = {}
 
 config.entry = [
-  path.join(__dirname, 'index.js')
+  path.join(__dirname, 'src/index.js')
 ]
 
 config.output = {
