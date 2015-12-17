@@ -24,13 +24,14 @@ class App extends Component {
 		return (
 			<div className={styles.intro}>
 				<h1>{info.title}</h1>
-				{info.desc}
+				<p>You are now ready to begin your new ReactJS application.</p>
+        <p>To get started, visit the <a href="http://facebook.github.io/react/" target="_blank">ReactJS</a> website.</p>
 				<div className={styles.todoContainer}>
 					<h3>SAMPLE APP</h3>
 					<TodoList data={data} />
 					<TodoAddForm onAddTodo={name => dispatch(addTodo(name))} />
 				</div>
-				<h2 className={styles.footnote}>{info.footnote}</h2>
+				<h2 className={styles.footnote}>Got a feedback or suggestion to this starter kit? <a href="{info.contact_url}" target="_blank">{info.contact_label}</a></h2>
 			</div>
 		)
 	}

@@ -1,8 +1,8 @@
 // The initial state
 const initialState = {
   title: 'Congratulations!',
-  desc: '<p>You are now ready to begin your new ReactJS application.</p><p>To get started, visit the <a href="http://facebook.github.io/react/" target="_blank">ReactJS</a> website.</p>',
-  footnote: 'Got a feedback or suggestion to this starter kit? <a href="https://twitter.com/tranvu/" target="_blank">Send me a tweet.</a>',
+  contact_url: 'https://twitter.com/tranvu/',
+  contact_label: 'Send me a Tweet!'
 }
 
 /**
