@@ -38,4 +38,10 @@ config.plugins = [
   new ExtractTextPlugin('styles.scss'),
 ]
 
+config.externals = {
+  'react': true,
+  'redux': true,
+  'react-redux': true
+}
+
 module.exports = config
