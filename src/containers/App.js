@@ -31,7 +31,7 @@ class App extends Component {
 					<TodoList data={data} />
 					<TodoAddForm onAddTodo={name => dispatch(addTodo(name))} />
 				</div>
-				<h2 className={styles.footnote}>Got a feedback or suggestion to this starter kit? <a href="{info.contact_url}" target="_blank">{info.contact_label}</a></h2>
+				<h2 className={styles.footnote}>Got a feedback or suggestion to this starter kit? <a href={info.contact_url} target="_blank">{info.contact_label}</a></h2>
 			</div>
 		)
 	}
