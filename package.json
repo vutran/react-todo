@@ -28,6 +28,10 @@
   },
   "homepage": "https://github.com/vutran/react-todo#readme",
   "dependencies": {},
+  "peerDependencies": {
+    "react": "^0.14.3",
+    "redux": "^3.0.5"
+  },
   "devDependencies": {
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
