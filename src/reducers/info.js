@@ -1,11 +1,9 @@
-// Import action types
-import { ADD_TODO } from '../actions/index'
-
 // The initial state
-const initialState = [
-  { name: 'Learn ReactJS' },
-  { name: 'Research Flux and Redux' }
-]
+const initialState = {
+  title: 'Congratulations!',
+  desc: '<p>You are now ready to begin your new ReactJS application.</p><p>To get started, visit the <a href="http://facebook.github.io/react/" target="_blank">ReactJS</a> website.</p>',
+  footnote: 'Got a feedback or suggestion to this starter kit? <a href="https://twitter.com/tranvu/" target="_blank">Send me a tweet.</a>',
+}
 
 /**
  * This is the reducer function for the "data" property in our application's state tree

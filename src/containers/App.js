@@ -16,25 +16,24 @@ import styles from '../styles/global.scss'
  * <App />
  */
 class App extends Component {
-  /**
-   * Renders the component
-   */
-  render() {
-    const { data, dispatch } = this.props
-    return (
-      <div className={styles.intro}>
-        <h1>Congratulations!</h1>
-        <p>You are now ready to begin your new ReactJS application.</p>
-        <p>To get started, visit the <a href="http://facebook.github.io/react/" target="_blank">ReactJS</a> website.</p>
-        <div className={styles.todoContainer}>
-          <h3>SAMPLE APP</h3>
-          <TodoList data={data} />
-          <TodoAddForm onAddTodo={name => dispatch(addTodo(name))} />
-        </div>
-        <h2 className={styles.footnote}>Got a feedback or suggestion to this starter kit? <a href="https://github.com/vutran/spa-starter-kit/issues" target="_blank">Post on GitHub.</a></h2>
-      </div>
-    )
-  }
+	/**
+	 * Renders the component
+	 */
+	render() {
+		const { data, info, dispatch } = this.props
+		return (
+			<div className={styles.intro}>
+				<h1>{info.title}</h1>
+				{info.desc}
+				<div className={styles.todoContainer}>
+					<h3>SAMPLE APP</h3>
+					<TodoList data={data} />
+					<TodoAddForm onAddTodo={name => dispatch(addTodo(name))} />
+				</div>
+				<h2 className={styles.footnote}>{info.footnote}</h2>
+			</div>
+		)
+	}
 }
 
 /**
@@ -44,9 +43,10 @@ class App extends Component {
  * @return object
  */
 function select(state) {
-  return {
-    data: state.data
-  }
+	return {
+		data: state.data,
+    info: state.info
+	}
 }
 
 export default connect(select)(App)
