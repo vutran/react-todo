@@ -18,10 +18,9 @@ npm install --save-dev react-todo
 ````javascript
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
 
 // Import the app boilerplate
-import { Root, configureStore, rootReduce } from `react-todo`
+import { Root, configureStore, rootReduce } from 'react-todo'
 
 // Create the store
 const store = configureStore()
