@@ -11,11 +11,10 @@ config.entry = [
 
 config.output = {
   path: path.join(__dirname, 'lib'),
-  filename: 'bundle.js'
+  filename: 'index.js',
+  library: 'react-todo',
+  libraryTarget: 'commonjs2'
 }
-
-config.library = 'react-todo'
-config.libraryTarget = 'commonjs2'
 
 config.resolve = {
   extensions: ['', '.js', '.scss']
