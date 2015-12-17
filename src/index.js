@@ -13,6 +13,3 @@ export { default as Root } from './containers/Root'
 
 export { default as rootReducer } from './reducers'
 export { default as configureStore } from './store/configure'
-
-// Styles
-export { default as styles } from './styles/global.scss'

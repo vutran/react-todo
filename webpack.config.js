@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 let config = {}
 
@@ -17,7 +18,7 @@ config.module = {
   loaders: [
     {
       test: /\.scss$/,
-      loaders: ['style', 'css', 'sass']
+      loader: ExtractTextPlugin.extract('style', 'css', 'sass')
     },
     {
       test: /\.js$/,
@@ -26,5 +27,9 @@ config.module = {
     }
   ]
 }
+
+config.plugins = [
+  new ExtractTextPlugin('styles.scss')
+]
 
 module.exports = config
