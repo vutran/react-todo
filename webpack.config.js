@@ -24,7 +24,7 @@ config.module = {
   loaders: [
     {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style', 'css', 'sass')
+      loader: ExtractTextPlugin.extract('style', 'css?modules', 'sass')
     },
     {
       test: /\.js$/,
