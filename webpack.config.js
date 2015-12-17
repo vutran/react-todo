@@ -17,6 +17,10 @@ config.output = {
 config.library = 'react-todo'
 config.libraryTarget = 'commonjs2'
 
+config.resolve = {
+  extensions: ['', '.js', '.scss']
+}
+
 config.module = {
   loaders: [
     {
@@ -32,7 +36,7 @@ config.module = {
 }
 
 config.plugins = [
-  new ExtractTextPlugin('styles.scss')
+  new ExtractTextPlugin('styles.scss'),
 ]
 
 module.exports = config
