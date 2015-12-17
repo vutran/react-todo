@@ -24,7 +24,7 @@ config.module = {
   loaders: [
     {
       test: /\.scss$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules', 'sass')
+      loaders: ['style', 'css?modules', 'sass']
     },
     {
       test: /\.js$/,
@@ -33,10 +33,6 @@ config.module = {
     }
   ]
 }
-
-config.plugins = [
-  new ExtractTextPlugin('styles.scss'),
-]
 
 config.externals = {
   'react': true,
