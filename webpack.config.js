@@ -14,6 +14,9 @@ config.output = {
   filename: 'bundle.js'
 }
 
+config.library = 'react-todo'
+config.libraryTarget = 'commonjs2'
+
 config.module = {
   loaders: [
     {
